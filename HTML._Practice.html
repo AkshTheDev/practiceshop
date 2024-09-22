@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./paw.jpeg"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0px 5px 20px;
+        backdrop-filter: blur(40px);
+        width: 100%;
+        position: fixed;
+      }
+
+      .img {
+        height: 70px;
+        width: auto;
+      }
+
+      header nav ul {
+        list-style-type: none;
+        display: flex;
+      }
+      header nav ul li {
+        margin: 30px 30px;
+      }
+      header nav ul li a {
+        color: rgb(19, 13, 13);
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: oblique;
+      }
+
+      .section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        margin: 0px 0px 10px;
+        padding: 20px;
+        width: 1495;
+      }
+      section h1 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-style: bold;
+        font-size: 40px;
+      }
+      section p {
+        font-style: italic;
+      }
+      section div {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+      }
+      section img {
+        width: 250px;
+        margin: 5px 20px 5px 20px;
+        border-radius: 20px;
+        border: 2px solid black;
+      }
+      #span {
+        background-image: linear-gradient(0deg, #d400ff, #62e2c4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .hypertxt {
+        font-size: 25px;
+        color: rgb(5, 5, 5);
+      }
+      .image {
+        display: flex;
+        margin-right: 5px;
+      }
+      .section2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        margin: 0px 0px 10px;
+        padding: 20px;
+        width: 1495px;
+      }
+      .A {
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid black;
+        padding: 5px;
+      }
+      .B {
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid black;
+        padding: 5px;
+      }
+      .C {
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid black;
+        padding: 5px;
+      }
+      .checked {
+        color: orange;
+      }
+      .line {
+        border: 1px dashed black;
+        margin: 0px 10px 0px 10px;
+      }
+      .line2 {
+        border: 1px dashed black;
+        margin: 0px 10px 0px 10px;
+      }
+      .heading {
+        background-image: radial-gradient(
+          circle,
+          rgb(191, 0, 255),
+          rgb(255, 221, 0)
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .formhead {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+      }
+      .D {
+        align-items: center;
+        background-image: radial-gradient(circle, rgb(191, 0, 255), rgb(255, 221, 0));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
+      input[type="email"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
+      input[type="tel"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
+      .align {
+        align-items: center;
+        
+      }
+      .txt{
+        font-style: oblique;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+      }
+      .dropdown{
+        font-size: 18px;
+        box-sizing: border-box;
+        
+      }
+      @media (max-width: 700px) {
+        header {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .image {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .section1 {
+          width: 650px;
+        }
+        .section2 {
+          display: flex;
+          flex-direction: column;
+          width: 650px;
+        }
+        .section3 {
+            display: flex;
+            flex-direction: column;
+            width: 650px;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="targ">
+        <img src="./DOG2.png" alt="logo was here " class="img" />
+      </div>
+      <nav class="main">
+        <ul class="list">
+          <li class="list"><a href="#" target="blank">HOME</a></li>
+          <li class="list"><a href="#" target="blank">DOG FOOD</a></li>
+          <li class="list"><a href="#" target="blank">CONTACT</a></li>
+          <li class="list"><a href="#" target="blank">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section1">
+      <h1>Paw licking food is here!!</h1>
+      <p>The nutrition they need, the taste they love</p>
+      <div class="image">
+        <a href="#" target="blank"
+          ><img src="./dogfood.png" alt="Dog food was here"
+        /></a>
+        <a href="#" target="blank"
+          ><img src="./dogfood.png" alt="Dog food was here"
+        /></a>
+        <a href="#" target="blank"
+          ><img src="./dogfood.png" alt="Dog food was here"
+        /></a>
+        <a href="#" target="blank"
+          ><img src="./dogfood.png" alt="Dog food was here"
+        /></a>
+        <a href="#" target="blank"
+          ><img src="./dogfood.png" alt="Dog food was here"
+        /></a>
+      </div>
+      <div>
+        <h3 class="hypertxt">
+          Click
+          <span id="span"
+            ><a href="#" alt="click here" target="blank">here</a></span
+          >
+          to order
+        </h3>
+      </div>
+    </section>
+    <div class="line"></div>
+    <section class="section2">
+      <h2 class="heading">Hear what our customers say..</h2>
+      <div>
+        <div class="A">
+          <div><h3 style="color: #b655ca">Review by Emily.R</h3></div>
+          <div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p>
+            “My Labrador, Bella, has a sensitive stomach, and we’ve tried
+            numerous brands. Dog Company’s Limited Ingredient Lamb & Rice
+            formula has been a game-changer. No more digestive issues, and she
+            seems happier and healthier. The only downside is that it’s a bit
+            pricey, but it’s worth it for her well-being.”
+          </p>
+        </div>
+        <div class="B">
+          <div><h3 style="color: #b655ca">Review by Michael.J</h3></div>
+          <div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p>
+            “I’ve been feeding my Golden Retriever, Max, Dog Company’s
+            Grain-Free Chicken Recipe for the past six months, and the results
+            have been amazing! His coat is shinier, and he has so much more
+            energy. Plus, he absolutely loves the taste. Highly recommend!”
+          </p>
+        </div>
+        <div class="C">
+          <div><h3 style="color: #b655ca">Review by Peter.J</h3></div>
+          <div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p>
+            “Dog Company’s Puppy Formula has been perfect for our new Beagle
+            pup, Charlie. He’s growing strong and healthy, and we haven’t had
+            any issues with allergies or upset stomachs. The small kibble size
+            is just right for him. We’ll definitely stick with this brand as he
+            grows.”
+          </p>
+        </div>
+      </div>
+    </section class=section3>
+    <div class="line2"></div>
+    <section>
+      <div class="formhead">
+        <h2 class="D">Become a Member..</h2>
+        <div class="form">
+          <div class="align">
+            <legend class="txt">Name:</legend>
+            <input type="text" />
+          </div>
+
+          <br />
+          <div class="align">
+            <legend class="txt">Gender:</legend>
+            <select class="dropdown">
+              <option>Male</option>
+              <option>Female</option>
+              <option>Others</option>
+            </select>
+          </div>
+
+          <br />
+          <div class="align">
+            <legend class="txt">Email-Id:</legend>
+            <input type="email" />
+          </div>
+          <br />
+          <div class="align">
+            <legend class="txt">Phone Number:</legend>
+            <input type="tel" minlength="10" maxlength="10" required />
+          </div>
+          <br />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
